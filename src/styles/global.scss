@@ -1,0 +1,66 @@
+@font-face {
+	font-family: 'Lexend';
+	src: url(/fonts/Lexend/Lexend-VariableFont_wght.ttf);
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url(/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+	font-style: normal;
+	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100svh;
+	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 450;
+	font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lexend', Helvetica, Arial, sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 900;
+	font-style: normal;
+}
+
+button {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+section.wrappered {
+	display: grid;
+	grid-template-columns:
+		1fr
+		min(1200px, 100%)
+		1fr;
+}
+
+section.wrappered > * {
+	grid-column: 2;
+}
+
+section.wrappered > .full-bleed {
+	width: 100%;
+	grid-column: 1 / 4;
+}
