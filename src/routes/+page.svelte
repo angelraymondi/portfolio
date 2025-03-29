@@ -7,9 +7,9 @@
 
 <Header></Header>
 <main>
-  <Hero></Hero>
+	<Hero></Hero>
 	<div class="break"></div>
-  <Specialties></Specialties>
+	<Specialties></Specialties>
 	<About></About>
 </main>
 
@@ -20,5 +20,12 @@
 	.break {
 		height: 3em;
 		background-color: $lime-green;
+		background-image: linear-gradient(
+				color.scale($lime-green, $alpha: -10%),
+				color.scale($lime-green, $alpha: -10%)
+			),
+			url(/do.svg);
+		background-size: cover;
+		background-position: center;
 	}
 </style>

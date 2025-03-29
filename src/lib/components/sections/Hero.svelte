@@ -35,7 +35,7 @@
 	<div class="wrapper">
 		<div class="text-container">
 			<h1 use:typewriter>
-				<span>Lorem ipsum&nbsp;</span><b>dolor sit.</b><br /><span>Amet consectetur elit.</span>
+				<span>Mi nombre es&nbsp;</span><b>Angel</b><br /><span>Desarrollador full stack</span>
 			</h1>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde vel fugit! Nemo, facere
@@ -53,7 +53,8 @@
 	@use '#styles/variables' as *;
 
 	section {
-		padding-top: calc(55px + 15px + 50px);
+		margin-top: 20px;
+		padding-top: 50px;
 		padding-bottom: 50px;
 
 		.wrapper {
@@ -79,7 +80,7 @@
 				:global(span.typewrited) {
 					animation-name: typewrited;
 					animation-duration: 0s;
-					animation-delay: calc(var(--i) * .05s);
+					animation-delay: calc(var(--i) * .04s);
 					animation-fill-mode: forwards;
 				}
 			}
