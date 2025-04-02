@@ -15,6 +15,10 @@
 	<Projects></Projects>
 </main>
 
+<svelte:head>
+	<title>Angel Raymondi</title>
+</svelte:head>
+
 <style lang="scss">
 	@use 'sass:color';
 	@use '#styles/variables' as *;
