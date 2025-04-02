@@ -108,8 +108,8 @@
 
 		&.sticked > div {
 			backdrop-filter: blur(20px);
-			background-color: rgba(0, 0, 0, 0.07);
-			border: 1px solid rgba(0, 0, 0, 0.07);
+			background-color: rgba(255, 255, 255, 0.4);
+			border: 1px solid rgba(0, 0, 0, 0.09);
 		}
 	}
 

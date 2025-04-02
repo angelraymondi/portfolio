@@ -36,6 +36,8 @@
 
 	section {
 		padding: 50px 30px;
+		background-color: rgb(250, 250, 250);
+		background-size: 500px;
 
 		& > h1 {
 			font-size: 2em;
@@ -63,15 +65,12 @@
 			gap: 15px;
 
 			& > div {
-				background-color: rgba(0, 0, 0, 0.04);
+				background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.06));
 				padding: 25px;
 				border-radius: 15px;
 				display: flex;
 				flex-direction: column;
-				transition:
-					background-color cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s,
-					box-shadow cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
-				backdrop-filter: blur(5px);
+				border: 1px solid rgba(0, 0, 0, .02);
 
 				& > :global(svg) {
 					margin-bottom: 15px;

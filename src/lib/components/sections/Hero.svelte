@@ -35,7 +35,7 @@
 	<div class="wrapper">
 		<div class="text-container">
 			<h1 use:typewriter>
-				<span>Mi nombre es&nbsp;</span><b>Angel</b><br /><span>Desarrollador full stack</span>
+				<span>Mi nombre es&nbsp;</span><b>Angel</b><span>,</span><br /><span>Desarrollador full stack</span>
 			</h1>
 			<p>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque unde vel fugit! Nemo, facere
@@ -51,6 +51,7 @@
 
 <style lang="scss">
 	@use '#styles/variables' as *;
+	@use 'sass:color';
 
 	section {
 		margin-top: 20px;
@@ -75,6 +76,7 @@
 
 				b {
 					color: $lime-green;
+					text-shadow: 0px 0px 20px color.scale($lime-green, $alpha: -25%);
 				}
 
 				:global(span.typewrited) {

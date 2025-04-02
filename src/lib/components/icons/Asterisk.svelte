@@ -1,9 +1,9 @@
 <script lang="ts">
-	const { dark }: { dark: boolean } = $props();
+	const { inherit }: { inherit: boolean } = $props();
 </script>
 
 <svg
-	class={dark ? 'dark' : undefined}
+	class={inherit ? 'inherit' : undefined}
 	width="1em"
 	height="1em"
 	viewBox="0 0 24 24"
@@ -25,7 +25,7 @@
 		stroke: $lime-green;
 	}
 
-	svg.dark > path {
-		stroke: rgba(0, 0, 0, 0.5);
+	svg.inherit > path {
+		stroke: currentColor;
 	}
 </style>

@@ -19,13 +19,7 @@
 		border-radius: 10px;
 		font-weight: 500;
 		cursor: pointer;
-		transition:
-			box-shadow cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s,
-			transform cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
-
-		&:hover {
-			box-shadow: 0px 4px 15px color.scale(rgb(151, 151, 151), $alpha: -60%);
-		}
+		transition: transform cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
 
 		&:active {
 			transform: scale(0.97);
@@ -41,9 +35,6 @@
 		border-radius: 10px;
 		font-weight: 500;
 		cursor: pointer;
-
-		&:hover {
-			box-shadow: 0px 4px 15px color.scale($lime-green, $alpha: -25%);
-		}
+		box-shadow: 0px 4px 15px color.scale($lime-green, $alpha: -25%);
 	}
 </style>

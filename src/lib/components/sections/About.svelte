@@ -9,7 +9,7 @@
       <div class="image"></div>
     </div>
 		<div class="text-container">
-      <SectionNav dark>Sobre mí</SectionNav>
+      <SectionNav inherit>Sobre mí</SectionNav>
 			<h1>Lorem ipsum dolor sit.</h1>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores itaque doloremque ipsam eius labore nesciunt!</p>
 		</div>
@@ -21,6 +21,7 @@
 
 	section {
 		background-color: $lime-green;
+		background-image: url(/doodles/summer.svg);
 
 		.wrapper {
 			padding: 50px 30px;

@@ -2,6 +2,7 @@
 	import Header from '$lib/components/Header.svelte';
 	import About from '$lib/components/sections/About.svelte';
 	import Hero from '$lib/components/sections/Hero.svelte';
+	import Projects from '$lib/components/sections/Projects.svelte';
 	import Specialties from '$lib/components/sections/Specialties.svelte';
 </script>
 
@@ -11,6 +12,7 @@
 	<div class="break"></div>
 	<Specialties></Specialties>
 	<About></About>
+	<Projects></Projects>
 </main>
 
 <style lang="scss">
@@ -24,7 +26,7 @@
 				color.scale($lime-green, $alpha: -10%),
 				color.scale($lime-green, $alpha: -10%)
 			),
-			url(/do.svg);
+			url(/doodles/bombs.svg);
 		background-size: cover;
 		background-position: center;
 	}
