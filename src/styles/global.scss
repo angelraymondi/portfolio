@@ -52,7 +52,7 @@ button {
 	max-width: 1200px;
 }
 
-section.wrappered {
+.wrappered {
 	display: grid;
 	grid-template-columns:
 		1fr
@@ -60,11 +60,11 @@ section.wrappered {
 		1fr;
 }
 
-section.wrappered > * {
+.wrappered > * {
 	grid-column: 2;
 }
 
-section.wrappered > .full-bleed {
+.wrappered > .full-bleed {
 	width: 100%;
 	grid-column: 1 / 4;
 }

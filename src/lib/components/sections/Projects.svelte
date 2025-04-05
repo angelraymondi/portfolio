@@ -7,7 +7,8 @@
 		{
 			icon: ChatMatIcon,
 			title: 'ChatMAT',
-			description: 'ChatMAT es un sitio web dedicado a asesorar alumnos. Para realizar el sitio empleé mis conocimientos en Svelte 5 y self-hosting.',
+			description:
+				'ChatMAT es un sitio web dedicado a asesorar alumnos. Para realizar el sitio empleé mis conocimientos en Svelte 5 y self-hosting.',
 			anchor: {
 				href: 'https://www.chatmat.net.pe',
 				text: 'www.chatmat.net.pe'
@@ -16,7 +17,8 @@
 		{
 			icon: ChatMatIcon,
 			title: 'ChatMAT',
-			description: 'ChatMAT es un sitio web dedicado a asesorar alumnos. Para realizar el sitio empleé mis conocimientos en Svelte 5 y self-hosting.',
+			description:
+				'ChatMAT es un sitio web dedicado a asesorar alumnos. Para realizar el sitio empleé mis conocimientos en Svelte 5 y self-hosting.',
 			anchor: {
 				href: 'https://www.chatmat.net.pe',
 				text: 'www.chatmat.net.pe'
@@ -25,7 +27,8 @@
 		{
 			icon: ChatMatIcon,
 			title: 'ChatMAT',
-			description: 'ChatMAT es un sitio web dedicado a asesorar alumnos. Para realizar el sitio empleé mis conocimientos en Svelte 5 y self-hosting.',
+			description:
+				'ChatMAT es un sitio web dedicado a asesorar alumnos. Para realizar el sitio empleé mis conocimientos en Svelte 5 y self-hosting.',
 			anchor: {
 				href: 'https://www.chatmat.net.pe',
 				text: 'www.chatmat.net.pe'
@@ -34,7 +37,8 @@
 		{
 			icon: ChatMatIcon,
 			title: 'ChatMAT',
-			description: 'ChatMAT es un sitio web dedicado a asesorar alumnos. Para realizar el sitio empleé mis conocimientos en Svelte 5 y self-hosting.',
+			description:
+				'ChatMAT es un sitio web dedicado a asesorar alumnos. Para realizar el sitio empleé mis conocimientos en Svelte 5 y self-hosting.',
 			anchor: {
 				href: 'https://www.chatmat.net.pe',
 				text: 'www.chatmat.net.pe'
@@ -43,24 +47,22 @@
 	];
 </script>
 
-<section>
-	<div class="wrapper">
-		<SectionNav inherit>Proyectos</SectionNav>
-		<h1>Proyectos en los que colaboré</h1>
-		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, nobis. Sit, at vero.</p>
+<section class="wrappered">
+	<SectionNav inherit>Proyectos</SectionNav>
+	<h1>Proyectos en los que colaboré</h1>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, nobis. Sit, at vero.</p>
 
-		<div class="container">
-			{#each projects as project}
-				<div class="project">
-					<div>
-						<svelte:component this={project.icon} />
-					</div>
-					<h1>{project.title}</h1>
-					<p>{project.description}</p>
-					<AnchorLink href={project.anchor.href}>{project.anchor.text}</AnchorLink>
+	<div class="container">
+		{#each projects as project}
+			<div class="project">
+				<div>
+					<svelte:component this={project.icon} />
 				</div>
-			{/each}
-		</div>
+				<h1>{project.title}</h1>
+				<p>{project.description}</p>
+				<AnchorLink href={project.anchor.href}>{project.anchor.text}</AnchorLink>
+			</div>
+		{/each}
 	</div>
 </section>
 
@@ -69,10 +71,10 @@
 	@use 'sass:color';
 
 	section {
-		background-color: rgb(20, 20, 20);
+		background-color: rgb(25, 25, 25);
 	}
 
-	section > .wrapper {
+	section {
 		padding: 50px 30px;
 		background-size: 500px;
 		color: color.mix($lime-green, white, 33.33%);
@@ -87,7 +89,7 @@
 
 	.container {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(35ch, 1fr));
 		gap: 15px;
 		margin-top: 20px;
 
@@ -97,6 +99,7 @@
 			border-radius: 15px;
 			display: flex;
 			flex-direction: column;
+			background-color: rgba(255, 255, 255, 0.01);
 
 			h1 {
 				margin: 15px 0 7px 0;

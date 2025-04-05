@@ -1,4 +1,5 @@
 <script>
+	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import About from '$lib/components/sections/About.svelte';
 	import Hero from '$lib/components/sections/Hero.svelte';
@@ -13,6 +14,7 @@
 	<Specialties></Specialties>
 	<About></About>
 	<Projects></Projects>
+	<Footer></Footer>
 </main>
 
 <svelte:head>
